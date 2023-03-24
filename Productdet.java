@@ -1,20 +1,22 @@
 import java.util.Scanner;
 class Product 
 {String pcode, pname; 
-int price;Product(String pcode_get, String pname_get, int price_get) 
+int price;
+Product(String pcode_get, String pname_get, int price_get) 
 {
-	pcode = pcode_get; pname = pname_get; this.price = price_get;}
+	pcode = pcode_get; pname = pname_get; this.price = price_get;
+}
 void compare(Product b,Product c)
 {
 if(price<=b.price && price<=c.price)
 
-	System.out.println("Lowest price of product is "+pcode);
+	System.out.println("Lowest price of product is "+pname+" and price is "+pcode);
 if(b.price<=c.price && b.price<=price)
 
-	System.out.println("Lowest price of product is "+b.pcode);
+	System.out.println("Lowest price of product is "+b.pname+" and price is "+b.pcode);
 if(c.price<=price && c.price<=price)
 
-	System.out.println("Lowest price of product is "+c.pcode);
+	System.out.println("Lowest price of product is "+c.pname+" and price is "+c.pcode);
 
 }
 
