@@ -1,5 +1,6 @@
+import java.util.Scanner;
 public class Complex {
-
+    
     double real;
     double imag;
 
@@ -9,8 +10,15 @@ public class Complex {
     }
 
     public static void main(String[] args) {
-        Complex n1 = new Complex(2.3, 4.5),
-                n2 = new Complex(3.4, 5.0),
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter the complex 1 ");
+        double a1 = s.nextDouble();
+        double b1 = s.nextDouble();
+        System.out.println("Enter the complex 2 ");
+        double a2 = s.nextDouble();
+        double b2 = s.nextDouble();
+        Complex n1 = new Complex(a1, b1),
+                n2 = new Complex(a2, b2),
                 temp;
 
         temp = add(n1, n2);
