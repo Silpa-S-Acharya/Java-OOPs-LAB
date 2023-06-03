@@ -25,8 +25,8 @@ public String subj,dept;
 	{
 	System.out.println("Employee id : "+empid);
 	System.out.println("Employee name : "+ename);
-	System.out.println("Employee address : "+sal);
-	System.out.println("Employee Salary : "+addr);
+	System.out.println("Employee Address : "+addr);
+	System.out.println("Employee Salary : "+sal);
 	System.out.println("Department : "+dept);
 	System.out.println("subjects taught by teacher: "+subj);
 	System.out.println("----------------------------------------------");
