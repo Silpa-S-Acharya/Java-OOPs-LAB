@@ -15,7 +15,6 @@ public float sal;
 class Teacher extends Employee
 {
 public String subj,dept;
-public int tid;
 	Teacher(int id, String name, String eaddr,float saly,String dep,String sub)
 	{super(id,name,eaddr,saly);
 	subj=sub;
