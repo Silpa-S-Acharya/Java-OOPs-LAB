@@ -42,7 +42,7 @@ Scanner sc =new Scanner(System.in);
 Scanner s=new Scanner(System.in);
 System.out.println("Enter the no of employee");
 int n=sc.nextInt();
-Teacher[] obj=new Teacher[n];
+Teacher[] t=new Teacher[n];
 for(i=0;i<n;i++)
 	{
 	System.out.println("enter the details of Employee "+(i+1));
@@ -62,6 +62,6 @@ for(i=0;i<n;i++)
 	}
 for(i=0;i<n;i++)
 
-obj[i].display();
+t[i].display();
 }
 }
