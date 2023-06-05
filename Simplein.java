@@ -58,7 +58,7 @@ for(i=0;i<n;i++)
 	String dept=s.nextLine();
 	System.out.println("Subject taught by teacher:");
 	String subj=s.nextLine();
-	obj[i] = new Teacher(empid,name,addr,sal,dept,subj);
+	t[i] = new Teacher(empid,name,addr,sal,dept,subj);
 	}
 for(i=0;i<n;i++)
 
