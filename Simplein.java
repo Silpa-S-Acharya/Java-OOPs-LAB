@@ -39,7 +39,6 @@ class Simplein
 public static void main(String args[]){
 int i;
 Scanner sc =new Scanner(System.in);
-Scanner s=new Scanner(System.in);
 System.out.println("Enter the no of employee");
 int n=sc.nextInt();
 Teacher[] t=new Teacher[n];
