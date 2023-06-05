@@ -48,16 +48,21 @@ for(i=0;i<n;i++)
 	System.out.println("enter the details of Employee "+(i+1));
 	System.out.println("Employee id:");
 	int empid=sc.nextInt();
-	System.out.println("Employee name:");
-	String name=s.nextLine();
-	System.out.println("Employee Address:");
-	String addr=s.nextLine();
+
 	System.out.println("Employee Salary:");
 	float sal=sc.nextFloat();
+
+	sc.nextLine();
+	System.out.println("Employee name:");
+	String name=sc.nextLine();
+
+	System.out.println("Employee Address:");
+	String addr=sc.nextLine();
+	
 	System.out.println("Teacher Department:");
-	String dept=s.nextLine();
+	String dept=sc.nextLine();
 	System.out.println("Subject taught by teacher:");
-	String subj=s.nextLine();
+	String subj=sc.nextLine();
 	t[i] = new Teacher(empid,name,addr,sal,dept,subj);
 	}
 for(i=0;i<n;i++)
