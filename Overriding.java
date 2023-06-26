@@ -2,6 +2,10 @@ import java.util.*;
 class Dimen
 {
 	public float a,b;
+	Dimen()
+	{
+
+	}
 	Dimen(float side)
 	{
 		a=side;
@@ -30,7 +34,7 @@ class Square extends Dimen
 		System.out.println("Area of square: "+a*a);
 	}
 }
-class Rectangle extends Square
+class Rectangle extends Dimen
 {
 	Rectangle(float a,float b)
 	{
@@ -43,7 +47,7 @@ class Rectangle extends Square
 		System.out.println("Area of rectangle: "+a*b);
 	}
 }
-class Circle extends Rectangle
+class Circle extends Dimen
 {
 
 	Circle(float a)
@@ -61,8 +65,8 @@ class Overriding
 	public static void main(String args[])
 	{
 		Scanner sc =new Scanner(System.in);
- 
-		
+		Dimen d=new Dimen();
+		d.area();
 		System.out.println("Enter the side of square ");
 		float a=sc.nextFloat();
 		Square sq=new Square(a);
@@ -80,7 +84,6 @@ class Overriding
 		Circle c=new Circle(r);
 		c.area();
 
-		Dimen d=new Dimen();
-		d.area();
+		
 	}
 }
